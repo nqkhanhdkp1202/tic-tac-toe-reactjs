@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #355c7d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-board {
+  margin-right: 120px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: #fff;
+  font-family: 'Cherry Bomb One', cursive;
+  border: 1px solid #999;
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 42px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 42px;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:hover {
+  background-color: #acacac;
+}
+
+.square.X {
+  color: blue;
+}
+
+.square.O {
+  color: red;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.game-info p {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.game-controller {
+  transition: .3s ease-in-out;
+}
+
+.game-controller .btn:first-child {
+  margin-right: 12px;
+}
+
+.game-controller .btn {
+  transition: .3s ease-in-out;
+}
+
+.game-controller .btn:hover{
+  background-color: #acacac;
+}
+
+.game-info {
+  margin-top: 10px;
+}
